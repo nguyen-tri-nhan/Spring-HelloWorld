@@ -5,14 +5,17 @@
     <title th:utext="${MESSAGE}">titile</title>
 </head>
 <body>
+    <a href="/loginPage">Login</a>
     <h2 th:utext="${TITLE}"></h2>
     <p th:utext="${MESSAGE}"></p>
     <h3>Hello word</h3>
+    <h3 th:utext="${NAME}"></h3>
     <div th:each="list: ${LIST}">
         <h2 th:utext="${list}"></h2>
     </div>
     <section th:each="list: ${LIST}">
         <option th:utext="${list}"></option>
     </section>
+    <a href="/next">Next Controller</a>
 </body>
 </html>
