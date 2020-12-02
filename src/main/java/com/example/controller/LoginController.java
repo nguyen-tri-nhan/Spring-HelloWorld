@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class LoginController {
+    // can create more requestmapping in a controller
     @RequestMapping("/loginPage")
     String home(Model model){
         return "login";
